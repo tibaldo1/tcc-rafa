@@ -59,7 +59,7 @@ export default function Home({ navigation }) {
           <TouchableOpacity style={{ backgroundColor: 'transparent', height: altura * 0.05, width: largura * 0.15, borderRadius: 1000, marginRight: largura * 0.1 }} onPress={() => navigation.navigate('criavaca')}>
             <Image source={Cow} style={{ height: altura * 0.065, width: largura * 0.146 }} />
           </TouchableOpacity>
-          <TouchableOpacity style={{ backgroundColor: 'transparent', height: altura * 0.05, width: largura * 0.15, borderRadius: 1000 }}>
+          <TouchableOpacity onPress={()=>navigation.navigate('conta')} style={{ backgroundColor: 'transparent', height: altura * 0.05, width: largura * 0.15, borderRadius: 1000 }}>
             <Image source={Svg} style={{ height: altura * 0.06, width: largura * 0.15 }} />
           </TouchableOpacity>
         </View>
