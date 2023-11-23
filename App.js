@@ -10,6 +10,7 @@ import Extrato from './screens/Extrato';
 import Conta from './screens/Conta';
 import EditarConta from './screens/EditarConta';
 import ResgatarFinancas from './screens/ResgatarFinancas';
+import ResgatarVaquinhas from './screens/ResgatarVaquinhas';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -27,6 +28,7 @@ export default function App() {
             <Stack.Screen name="conta" component={Conta} />
             <Stack.Screen name="editarconta" component={EditarConta} />
             <Stack.Screen name="resgatarfinancas" component={ResgatarFinancas} />
+            <Stack.Screen name="resgatarvaquinhas" component={ResgatarVaquinhas} />
 
 
           </Stack.Navigator>

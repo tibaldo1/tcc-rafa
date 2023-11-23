@@ -30,7 +30,7 @@ export default function Conta({navigation}) {
         <Text style={styles.text}>{dados.saldo}</Text>
       </View>
 
-      <TouchableOpacity style={styles.button} onPress={() => console.log('Resgatar Vaquinhas')}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('resgatarvaquinhas')}>
         <Text style={styles.buttonText}>Resgatar Vaquinhas</Text>
       </TouchableOpacity>
 
