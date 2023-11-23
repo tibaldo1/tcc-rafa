@@ -30,8 +30,8 @@ export default function Home({ navigation }) {
       <View style={{ height: altura * 0.04, width: largura * 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{ color: 'white', fontSize: altura * 0.03, fontWeight: '800' }}>saldo:</Text>
       </View>
-      <View style={{ backgroundColor: '#D7E3F5', width: largura * 0.90, height: altura * 0.10, borderRadius: 20, marginBottom: altura * 0.015, flexDirection: 'row', alignContent: 'center', marginTop: altura * 0, elevation: 10, shadowColor: 'black' }}>
-        <Text style={{ color: 'white', fontSize: altura * 0.05, marginLeft: largura * 0.1 }}>R$:</Text>
+      <View style={{ backgroundColor: '#D7E3F5', width: largura * 0.90, height: altura * 0.10, borderRadius: 20, marginBottom: altura * 0.015, flexDirection: 'row', alignContent: 'center', marginTop: altura * 0., elevation: 10, shadowColor: 'black', justifyContent:'center' }}>
+        <Text style={{ color: 'white', fontSize: altura * 0.034, marginLeft: largura * 0.04, marginTop:altura*0.025 }}>R$:</Text>
         {viewSaldo ? (
           <Text style={{ color: 'white', fontSize: altura * 0.058, marginLeft: largura * 0.05 }}>{dadosUsuarios.saldo}</Text>
         ) : (

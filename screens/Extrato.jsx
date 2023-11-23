@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import ExtratoCard from './ExtratoCard'; 
 import axios from 'axios';
 
@@ -11,12 +11,12 @@ export default function Extrato() {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Text style={styles.title}>Extrato</Text>
       {dados.map((item) => (
         <ExtratoCard key={item.id} id={item.id} valor={item.valor} />
       ))}
-    </View>
+    </ScrollView>
   );
 }
 
