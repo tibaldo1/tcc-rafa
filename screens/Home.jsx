@@ -24,6 +24,9 @@ export default function Home({ navigation }) {
 
   return (
     <View style={{ height: altura * 1, width: largura * 1, backgroundColor: '#C1D4EF', justifyContent: 'center', alignItems: 'center' }}>
+
+      {/* card de saldo aqui */}
+
       <View style={{ height: altura * 0.04, width: largura * 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{ color: 'white', fontSize: altura * 0.03, fontWeight: '800' }}>saldo:</Text>
       </View>
@@ -40,6 +43,11 @@ export default function Home({ navigation }) {
           </TouchableOpacity>
         </View>
       </View>
+
+      {/* card de saldo aqui */}
+
+
+      {/* menu das opcoes */}
       <View style={{ backgroundColor: '#D7E3F5', width: largura * 0.90, height: altura * 0.10, borderRadius: 20, marginBottom: altura * 0.015, display: 'flex', justifyContent: 'center', alignItems: 'center', elevation: 10 }}>
         <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', height: altura * 0.075, width: largura * 1, marginTop: altura * 0.01 }}>
           <TouchableOpacity
@@ -62,11 +70,14 @@ export default function Home({ navigation }) {
         </View>
       </View>
       <View style={{ height: altura * 0.05, width: largura * 0.25, borderRadius: 15, justifyContent: 'center', alignContent: 'center', marginBottom: altura * 0.015, elevation: 10, shadowColor: 'black', backgroundColor: '#0b5edb', display: 'flex', flexDirection: 'row' }}>
-        <TouchableOpacity style={{ height: altura * 0.05, width: largura * 0.25, backgroundColor: '#0b5edb', borderRadius: 15, justifyContent: 'center' }}>
+        <TouchableOpacity onPress={()=>navigation.navigate('extrato')} style={{ height: altura * 0.05, width: largura * 0.25, backgroundColor: '#0b5edb', borderRadius: 15, justifyContent: 'center' }}>
           <Text style={{ backgroundColor: 'transparent', textAlign: 'center', color: 'white' }}>extrato</Text>
           <Image source={Data} style={{ height: altura * 0.04, width: largura * 0.10 }} />
         </TouchableOpacity>
       </View>
+
+      {/* menu das opcoes */}
+
       <View style={{ backgroundColor: '#D7E3F5', width: largura * 0.95, height: altura * 0.60, borderRadius: 20, alignItems: 'center', elevation: 10 }}>
         <ScrollView contentContainerStyle={{ alignItems: 'center', flexGrow: 1 }}>
           <View style={{ display: 'flex', flexDirection: 'row', width: largura * 0.60, justifyContent: 'center', backgroundColor: 'transparent' }}>

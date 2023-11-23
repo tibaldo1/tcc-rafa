@@ -6,6 +6,7 @@ import CriaVaca from './screens/CriaVaca';
 import { NavigationContainer } from '@react-navigation/native';
 import InsereSaldo from './screens/InsereSaldo';
 import VacaCompleta from './screens/VacaCompleta';
+import Extrato from './screens/Extrato';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -19,6 +20,7 @@ export default function App() {
             <Stack.Screen name="criavaca" component={CriaVaca} />
             <Stack.Screen name="inseresaldo" component={InsereSaldo} />
             <Stack.Screen name="vacacompleta" component={VacaCompleta} />
+            <Stack.Screen name="extrato" component={Extrato} />
           </Stack.Navigator>
         </NavigationContainer>
     
