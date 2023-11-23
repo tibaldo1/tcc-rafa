@@ -6,8 +6,8 @@ import axios from 'axios';
 export default function CriaVaca({navigation}) {
 const [nome,setNome]=useState('');
 const [descricao,setDescricao]=useState('');
-const [valor,setValor]=useState('');
-const [objetivo,setObjetivo]=useState('');
+const [valor,setValor]=useState(0);
+const [objetivo,setObjetivo]=useState(0);
 const [data_fim,setData]=useState('');
 const [id,setId]=useState("");
 const [cpf, setCpf]=useState(1)
@@ -20,7 +20,9 @@ const [cpf, setCpf]=useState(1)
             objetivo,
             data_fim
         }
-        const response=axios.post('http://10.0.2.2:8000/vaquinha',dados).then((res)=>{setId(res.data.id)});
+        console.log(dados);
+        const response=axios.post('http://10.0.2.2:8000/vaquinha',dados).then((res)=>{setId(res.data.id_vaquinha)});
+
         
 
         const dadosNovos={
